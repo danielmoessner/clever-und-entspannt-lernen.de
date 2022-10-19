@@ -1,0 +1,25 @@
+// User styles
+//
+// This is the place where you should place all additional styles and imports.
+// This will allow you to take advantage of future updates with lower time consumed on the upgrade process.
+html{
+	font-size: 1.1rem;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Neucha', cursive;
+	font-weight: normal;
+}
+
+body, span, p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+}
+
+address {
+	font-weight: lighter;
+}
+
+body {
+	color: $dark;
+}

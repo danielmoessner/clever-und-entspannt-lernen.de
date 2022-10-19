@@ -1,0 +1,42 @@
+//
+// Utilities
+//
+
+
+
+@import "utilities/animations";
+@import "utilities/blurable";
+@import "utilities/background";
+@import "utilities/borders";
+@import "utilities/delimiters";
+@import "utilities/floating";
+@import "utilities/helper";
+@import "utilities/hover";
+@import "utilities/image";
+@import "utilities/opacity";
+@import "utilities/position";
+@import "utilities/separators";
+@import "utilities/shape";
+@import "utilities/sizing";
+@import "utilities/spacing";
+@import "utilities/shadows";
+@import "utilities/text";
+@import "utilities/transforms";
+@import "utilities/zindex";
+
+
+
+@include bg-gradient-variant(".bg-gradient-one", #df6511);
+@include bg-gradient-variant(".bg-gradient-two", #efcd00);
+@include bg-gradient-variant(".bg-gradient-three", #00aad5);
+@include bg-gradient-variant(".bg-gradient-four", #a8d4eb);
+@include bg-gradient-variant(".bg-gradient-five", #f7a823);
+@include bg-gradient-variant(".bg-gradient-six", #2858a5);
+@include bg-gradient-variant(".bg-gradient-seven", #43444a);
+.text-one{color: #df6511;}
+.text-two{color: #efcd00;}
+.text-three{color: #00aad5;}
+.text-four{color: #a8d4eb;}
+.text-five{color: #f7a823;}
+.text-six{color: #2858a5;}
+.text-seven{color: #43444a;}

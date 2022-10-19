@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="de">
+
+<head>
+    {% include 'partials/head.html' %}
+    <title>Kontakt</title>
+    <meta content="Kontakt" property="og:title">
+</head>
+
+<body>
+{% include 'partials/preloader.html' %}
+<!-- Header -->
+<header class="header-transparent" id="header-main">
+    {% include 'partials/topbar.html' %}
+    {% include 'partials/navbar.html' %}
+</header>
+<!-- Main content -->
+<section class="slice py-6 pt-lg-7 pb-lg-8 bg-primary">
+    <div data-offset-top="#navbar-main" style="padding-top: 60px;">
+        <!-- Container -->
+        <div class="container d-flex align-items-center text-center text-lg-left">
+            <div class="col px-0">
+                <div class="row row-grid align-items-center">
+                    <div class="col-lg-6">
+                        <!-- Heading -->
+                        <h1 class="h1 text-white text-center text-lg-left my-4">
+                            Auf zu <strong class="text-warning">leichterem Lernen</strong> und <strong
+                                class="text-warning">besseren Noten</strong>
+                        </h1>
+                        <!-- Text -->
+                        <p class="lead text-white text-center text-lg-left">
+                            Für ein kostenloses unverbindliches Vorgespräch stehe ich Ihnen gerne zur Verfügung. Ich
+                            freue mich auf Sie.
+                        </p>
+                        <!-- Buttons -->
+                        <div class="mt-5 text-center text-lg-left">
+                            <a href="#kontakt" data-scroll-to class="btn btn-light btn-lg btn-icon">
+                                <span class="btn-inner--text">Jetzt Kontakt aufnehmen</span>
+                                <span class="btn-inner--icon">
+                                        <i data-feather="check"></i>
+                                    </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SVG separator -->
+    <div class="shape-container shape-line shape-position-bottom noprint">
+        <img alt="Image placeholder" src="{% static 'img/svg/separators/line.svg' %}" class="svg-inject">
+    </div>
+</section>
+<section class="slice slice-lg" id="kontakt">
+    <div class="container">
+        {% include 'partials/corona.html' %}
+        <div class="row">
+            <div class="col-md-6 col-xl-4">
+                <div class="card text-center hover-translate-y-n10 hover-shadow-lg">
+                    <div class="px-5 pb-5">
+                        <div class="py-5">
+                            <div class="icon text-primary mx-auto">
+                                <i data-feather="phone-call"></i>
+                            </div>
+                        </div>
+                        <h2 class="h5">Telefon</h2>
+                        <p class=" mt-2 mb-0">Rufen Sie einfach an unter:</p>
+                        <div class="mt-4">
+                            <a href="tel:0049896732860" class="link-underline-primary">089 673 28 60</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card text-center hover-translate-y-n10 hover-shadow-lg">
+                    <div class="px-5 pb-5">
+                        <div class="py-5">
+                            <div class="icon text-primary mx-auto">
+                                <i data-feather="mail"></i>
+                            </div>
+                        </div>
+                        <h2 class="h5">E-Mail</h2>
+                        <p class=" mt-2 mb-0">Schreiben Sie mir eine E-Mail an:</p>
+                        <div class="mt-4">
+                            <a href="mailto:susanne.soelch@arcor.de" class="link-underline-primary">susanne.soelch@arcor.de</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card text-center hover-translate-y-n10 hover-shadow-lg">
+                    <div class="px-5 pb-5">
+                        <div class="py-5">
+                            <div class="icon text-primary mx-auto">
+                                <i data-feather="smartphone"></i>
+                            </div>
+                        </div>
+                        <h2 class="h5">Mobil</h2>
+                        <p class=" mt-2 mb-0">Erreichbar unter:</p>
+                        <div class="mt-4">
+                            <a href="tel:004917652531631" class="link-underline-primary">0176 5253 1631</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slice slice-lg">
+    <div class="container">
+        <div class="row row-grid justify-content-between align-items-center">
+            <div class="col-lg-5">
+                <h2 class="h3">Clever & entspannt lernen - Susanne Sölch</h2>
+                <p class="lead my-4">
+                    E-Mail: <a href="#">susanne.soelch@arcor.de</a><br>
+                    Telefon: 089 673 28 60 <br>
+                    Mobil: 0176 5253 1631
+                </p>
+                <p>
+                    Interesse, Anregungen, Fragen? Rufen Sie mich einfach an oder schreiben Sie mir eine E-Mail. Ich
+                    werde mich schnellstmöglich bei Ihnen melden.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <a href="https://goo.gl/maps/j4hYGUw3QZu3oK9GA" target="_blank">
+                    <img alt="Google Maps Karte" class="img-fluid w-full" height="600" src="{% static 'img/map/img.png' %}"/>
+                    <span class="sr-only">Zu Google Maps</span>
+                </a>
+                {#                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.951282508621!2d11.690833415955456!3d48.13046287922285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e0a85178b148d%3A0x8d7452151dca302b!2sLernen%20mit%20Durchblick%20-%20Susanne%20S%C3%B6lch!5e0!3m2!1sde!2spt!4v1570974324660!5m2!1sde!2spt" frameborder="0" style="border:0; height: 600px; width: 100%;" allowfullscreen=""></iframe>#}
+            </div>
+        </div>
+    </div>
+</section>
+{% include 'partials/cta.html' %}
+{% include 'partials/footer.html' %}
+{% include 'partials/scripts.html' %}
+</body>
+
+</html>

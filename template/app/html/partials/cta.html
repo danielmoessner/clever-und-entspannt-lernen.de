@@ -1,0 +1,26 @@
+{% load static %}
+<section>
+    <div class="container mb-5 py-5 border-bottom">
+        <div class="row align-items-center text-center text-lg-left">
+            <div class="col-12 col-lg mb-4 mb-lg-0">
+                <h2 class="h3 h5 mb-1">
+                    Clever und entspannt lernen
+                </h2>
+                <p class="font-size-lg text-muted mb-0">
+                    Wenn wir alles täten, wozu wir imstande sind, würden wir uns wahrscheinlich in Erstaunen versetzen. (Thomas Alva Edison)
+                </p>
+            </div>
+            <div class="col-12 col-lg-auto noprint">
+{#                <a href="docs/index.html" class="btn btn-neutral btn-icon my-2">#}
+{#                    <span class="btn-inner--icon">#}
+{#                        <i data-feather="book" class="text-primary"></i>#}
+{#                    </span>#}
+{#                    <span class="btn-inner--text">Methoden des erfolgreichen Lernens</span>#}
+{#                </a>#}
+                <a href="{% url 'content:contact' %}" class="btn btn-primary my-2">
+                    Kontakt
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

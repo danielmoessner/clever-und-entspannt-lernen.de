@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Preloader -->
+<style>
+    @keyframes hidePreloader {
+        0% {
+            width: 100%;
+            height: 100%;
+        }
+
+        100% {
+            width: 0;
+            height: 0;
+        }
+    }
+
+    body>div.preloader {
+        position: fixed;
+        background: white;
+        width: 100%;
+        height: 100%;
+        z-index: 1071;
+        opacity: 0;
+        transition: opacity .5s ease;
+        overflow: hidden;
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body:not(.loaded)>div.preloader {
+        opacity: 1;
+    }
+
+    body:not(.loaded) {
+        overflow: hidden;
+    }
+
+    body.loaded>div.preloader {
+        animation: hidePreloader .5s linear .5s forwards;
+    }
+</style>
+<script>
+    window.addEventListener("load", function() {
+        setTimeout(function() {
+            document.querySelector('body').classList.add('loaded');
+        }, 300);
+    });
+</script>
+<!-- Favicon -->
+<link rel="icon" href="/static/img/brand/favicon.png" type="image/png">
+<link rel="icon" type="image/png" href="/static/img/brand/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/static/img/brand/favicon-16x16.png" sizes="16x16" />
+<!-- Page CSS -->
+
+<link rel="stylesheet" href="/static/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="/static/libs/%40fortawesome/fontawesome-free/css/all.min.css">
+<!-- Quick CSS -->
+<link rel="stylesheet" href="/static/css/quick-website.css" media="screen">
+<link rel="stylesheet" href="/static/css/print.css" media="print">
+    <title>Impressum</title>
+    <meta content="Impressum" property="og:title">
+</head>
+
+<body>
+<!-- Preloader -->
+
+<div class="preloader">
+    <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<!-- Header -->
+<header class="header-transparent" id="header-main">
+    <!-- Topbar -->
+
+<div id="navbar-top-main" class="navbar-top py-1 navbar-light bg-light navbar-border p-0">
+    <div class="container">
+        <div class="navbar-nav align-items-center">
+            <div class="">
+                <a href="/" class="navbar-text text-white text-sm mr-3">Lerncoaching &amp; Entspannung - Susanne Sölch</a>
+            </div>
+            <div class="ml-auto d-none d-sm-inline-block">
+                <ul class="nav">
+                    <li class="nav-item dropdown ml-lg-2">
+                        <a class="nav-link px-0 text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0,10">
+                            <span>München</span>
+                        </a>
+                        <div class="mr-auto dropdown-menu dropdown-menu-sm">
+                            <address class="px-2 m-0">
+                                <ul class="list-unstyled">
+                                    <li><strong>Clever &amp; entspannt lernen</strong></li>
+                                    <li>Susanne Sölch</li>
+                                    <li>Erika-Cremer-Str. 11</li>
+                                    <li>81829 München</li>
+                                </ul>
+                            </address>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>  
+    <!-- Navbar -->
+
+<nav class="navbar navbar-main navbar-expand-xl navbar-sticky navbar-dark bg-primary p-0 py-2 py-xl-0" id="navbar-main">
+    <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand m-0" href="/">
+            <img alt="Logo" src="/static/img/svg/logos/SusanneSoelch_Logo_quer.svg" id="navbar-logo">
+        </a>
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-overlay rounded" id="navbar-main-collapse">
+            <!-- Collapse header  -->
+            <div class="collapse-header justify-content-between px-md-4 align-items-center">
+
+                        <a class="navbar-brand" href="/">
+                            <img alt="Logo" src="/static/img/svg/logos/SusanneSoelch_Logo_quer.svg">
+                        </a>
+
+                        <!-- Toggler -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <i data-feather="x"></i>
+                        </button>
+
+            </div>
+            <!-- Navigation -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                    <a onclick="window.open('/', '_self');" class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Startseite</a>
+                    <div class="dropdown-menu dropdown-menu-md p-0 d-none d-xl-block">
+                        <div class="list-group list-group-flush">
+                            <a href="/" class="list-group-item list-group-item-action border-bottom" role="button">
+                                <div class="media d-flex align-items-center">
+                                    <!-- SVG icon -->
+                                    <figure style="width: 50px;">
+                                        <img alt="Image placeholder" src="/static/img/svg/icons/Book.svg" class="img-fluid" style="width: 40px;">
+                                    </figure>
+                                    <!-- Media body -->
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-0">Clever &amp; entspannt lernen</h6>
+                                        <small class="text-sm">Alles im Überblick.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                    <a onclick="window.open('/ueber-mich', '_self');" class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Über mich</a>
+                    <div class="dropdown-menu dropdown-menu-md p-0 d-none d-xl-block">
+                        <div class="list-group list-group-flush">
+                            <a href="/ueber-mich" class="list-group-item list-group-item-action border-bottom" role="button">
+                                <div class="media d-flex align-items-center">
+                                    <!-- SVG icon -->
+                                    <figure style="width: 50px;">
+                                        <img alt="Image placeholder" src="/static/img/svg/icons/User_female.svg" class="img-fluid" style="width: 40px;">
+                                    </figure>
+                                    <!-- Media body -->
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-0">Wer bin ich?</h6>
+                                        <small class="text-sm">Erfahren sie mehr.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zum schulischen Erfolg</a>
+                    <div class="dropdown-menu dropdown-menu-md p-0">
+                        <div class="list-group list-group-flush">
+                            <a href="/lerncoaching" class="list-group-item list-group-item-action border-bottom" role="button">
+                                <div class="media d-flex align-items-center">
+                                    <!-- SVG icon -->
+                                    <figure style="width: 50px;">
+                                        <img alt="Image placeholder" src="/static/img/svg/icons/Target.svg" class="img-fluid" style="width: 40px;">
+                                    </figure>
+                                    <!-- Media body -->
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-0">Lerncoaching</h6>
+                                        <small class="text-sm">Schritt für Schritt zum Erfolg.</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/entspannungscoaching" class="list-group-item list-group-item-action" role="button">
+                                <div class="media d-flex align-items-center">
+                                    <!-- SVG icon -->
+                                    <figure style="width: 50px;">
+                                        <img alt="Image placeholder" src="/static/img/svg/icons/Ideea.svg" class="img-fluid" style="width: 40px;">
+                                    </figure>
+                                    <!-- Media body -->
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-0">Entspannungscoaching</h6>
+                                        <small class="text-sm">Was gehört zum Erfolg dazu?</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown-menu-links rounded-bottom delimiter-top p-4 d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a href="/lerncoaching#ziele" class="dropdown-item">Lerncoaching: Ziele</a>
+                                    <a href="/lerncoaching#fuer-wen-geeignet" class="dropdown-item">Lerncoaching: Für wen geeignet?</a>
+                                    <a href="/entspannungscoaching#ziele" class="dropdown-item">Entspannungscoaching: Ziele</a>
+                                    <a href="/entspannungscoaching#methoden" class="dropdown-item">Entspannungscoaching: Methoden</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                    <a onclick="window.open('/kundenstimmen', '_self');" class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kundenstimmen</a>
+                    <div class="dropdown-menu dropdown-menu-md p-0">
+                        <div class="list-group list-group-flush d-none d-xl-block">
+                            <a href="/kundenstimmen" class="list-group-item list-group-item-action border-bottom" role="button">
+                                <div class="media d-flex align-items-center">
+                                    <!-- SVG icon -->
+                                    <figure style="width: 50px;">
+                                        <img alt="Image placeholder" src="/static/img/svg/icons/Strength.svg" class="img-fluid" style="width: 40px;">
+                                    </figure>
+                                    <!-- Media body -->
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-0">Wem hat es geholfen?</h6>
+                                        <small class="text-sm">Erfahren Sie die Meinungen anderer Personen.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kontakt</a>
+                    <div class="dropdown-menu dropdown-menu-md p-0">
+                        <div class="list-group list-group-flush">
+                            <a href="/kontakt" class="list-group-item list-group-item-action border-bottom" role="button">
+                                <div class="media d-flex align-items-center">
+                                    <!-- SVG icon -->
+                                    <figure style="width: 50px;">
+                                        <img alt="Image placeholder" src="/static/img/svg/icons/Contacts.svg" class="img-fluid" style="width: 40px;">
+                                    </figure>
+                                    <!-- Media body -->
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-0">Kontaktdaten</h6>
+                                        <small class="text-sm">Anfahrt, Telefonnummer und E-Mail.</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="docs/components/index.html" class="list-group-item list-group-item-action d-md-none" role="button">
+                                <div class="media d-flex align-items-center">
+                                    <!-- SVG icon -->
+                                    <figure style="width: 50px;">
+                                        <img alt="Image placeholder" src="/static/img/svg/icons/Phone.svg" class="img-fluid" style="width: 40px;">
+                                    </figure>
+                                    <!-- Media body -->
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-0">Anruf</h6>
+                                        <small class="text-sm">Auf Ihrem Smartphone verfügbar.</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="mailto:susanne.soelch@arcor.de?subject=Anfrage" class="list-group-item list-group-item-action" role="button">
+                                <div class="media d-flex align-items-center">
+                                    <!-- SVG icon -->
+                                    <figure style="width: 50px;">
+                                        <img alt="Image placeholder" src="/static/img/svg/icons/Email.svg" class="img-fluid" style="width: 40px;">
+                                    </figure>
+                                    <!-- Media body -->
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-0">E-Mail</h6>
+                                        <small class="text-sm">Leitet Sie zu Ihrem E-Mail Programm weiter.</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- Desktop Button -->
+            <!--
+            <a class="btn btn-sm d-none d-lg-inline-block btn-info mx-0" href="/kontakt">
+                Kontakt
+            </a>
+            -->
+            <!-- Mobile button -->
+
+
+
+        </div>
+    </div>
+</nav>
+</header>
+<!-- Main content -->
+<section class="slice py-6 pt-lg-7 pb-lg-8 bg-primary">
+    <div data-offset-top="#navbar-main" style="padding-top: 60px;">
+        <!-- Container -->
+        <div class="container d-flex align-items-center text-center text-lg-left">
+            <div class="col px-0">
+                <div class="row row-grid align-items-center">
+                    <div class="col-lg-6">
+                        <!-- Heading -->
+                        <h1 class="h1 text-white text-center text-lg-left my-4">
+                            Impressum
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SVG separator -->
+    <div class="shape-container shape-line shape-position-bottom noprint">
+        <img alt="Image placeholder" src="/static/img/svg/separators/line.svg" class="svg-inject">
+    </div>
+</section>
+<section class="slice slice-lg">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-xl-8 text-lg-left">
+                <h2 class="h4 mb-4">Impressum</h2>
+                <p>
+                    Clever und entspannt lernen <br>
+                    Susanne Sölch<br>
+                    Erika-Cremer-Straße 11<br>
+                    81829 München<br>
+                    Telefon: 089 673 28 60<br>
+                    E-Mail: susanne.soelch@arcor.de<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer-main">
+    <div class="footer footer-light">
+        <div class="container">
+            <div class="row pt-md">
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                    <div class="pr-5">
+                        <a class="" href="/">
+                            <img class="img-fluid w-100" alt="Image Logo" src="/static/img/svg/logos/SusanneSoelch_Logo_quer_orig.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                    <h6 class="heading mb-3">Seite</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/">Startseite</a></li>
+                        <li><a href="/ueber-mich">Über mich</a></li>
+                        <li><a href="/lerncoaching">Lerncoaching</a></li>
+                        <li><a href="/entspannungscoaching">Entspannungscoaching</a></li>
+                        <li><a href="/kundenstimmen">Kundenstimmen</a></li>
+                        <li><a href="/kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12 col-sm-6 mb-5 mb-lg-0">
+                    <h6 class="heading mb-3">Kontakt</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="tel:0049896732860">Telefon: 089 673 28 60</a></li>
+                        <li><a href="tel:004917652531631">Mobil: 0176 5253 1631</a></li>
+                        <li><a href="mailto:susanne.soelch@arcor.de">E-Mail: susanne.soelch@arcor.de</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12 col-sm-6 mb-5 mb-lg-0">
+                    <h6 class="heading mb-3">Anfahrt</h6>
+                    <address>
+                            <normal>Clever &amp; entspannt lernen</normal> <br>
+                            Susanne Sölch <br>
+                            Erika-Cremer-Straße 11 <br>
+                            81829 München <br>
+                        </address>
+                    <ul class="list-unstyled">
+                        
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-md-between py-4 mt-4 border-top mx-0">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="copyright text-sm text-center text-md-left">
+                        &copy; 2019 - Clever &amp; entspannt lernen - Susanne Sölch. <br>
+                        Seite erstellt von <a href="https://tortuga-webdesign.de" target="_blank">Daniel Mössner</a>. Logos &amp; Farben von <a target="_blank" href="https://www.annikalind-grafikdesign.de/">Annika Lind.</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav align-items-center justify-content-center justify-content-md-end">
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-light" href="/impressum">Impressum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pr-0 font-weight-light" href="/datenschutz">Datenschutz</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>   
+
+<!-- Core JS  -->
+
+<script src="/static/libs/jquery/dist/jquery.min.js"></script>
+<script src="/static/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/static/libs/in-view/dist/in-view.min.js"></script>
+<script src="/static/libs/sticky-kit/dist/sticky-kit.min.js"></script>
+<script src="/static/libs/svg-injector/dist/svg-injector.min.js"></script>
+<script src="/static/libs/feather-icons/dist/feather.min.js"></script>
+<script src="/static/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/static/libs/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+<script src="/static/libs/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+<!-- Page JS -->
+<script src="/static/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+<!-- Quick JS -->
+<script src="/static/js/quick-website.js"></script>
+<!-- Feather Icons -->
+<script>
+    feather.replace({
+        'width': '1em',
+        'height': '1em'
+    })
+</script>
+</body>

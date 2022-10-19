@@ -1,0 +1,67 @@
+{% load static %}
+<footer id="footer-main">
+    <div class="footer footer-light">
+        <div class="container">
+            <div class="row pt-md">
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                    <div class="pr-5">
+                        <a class="" href="{% url 'content:index' %}">
+                            <img class="img-fluid w-100" alt="Image Logo" src="{% static 'img/svg/logos/SusanneSoelch_Logo_quer_orig.svg' %}">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                    <h6 class="heading mb-3">Seite</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'content:index' %}">Startseite</a></li>
+                        <li><a href="{% url 'content:about' %}">Über mich</a></li>
+                        <li><a href="{% url 'content:studycoaching' %}">Lerncoaching</a></li>
+                        <li><a href="{% url 'content:relaxationcoaching' %}">Entspannungscoaching</a></li>
+                        <li><a href="{% url 'content:customerreviews' %}">Kundenstimmen</a></li>
+                        <li><a href="{% url 'content:contact' %}">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12 col-sm-6 mb-5 mb-lg-0">
+                    <h6 class="heading mb-3">Kontakt</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="tel:0049896732860">Telefon: 089 673 28 60</a></li>
+                        <li><a href="tel:004917652531631">Mobil: 0176 5253 1631</a></li>
+                        <li><a href="mailto:susanne.soelch@arcor.de">E-Mail: susanne.soelch@arcor.de</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12 col-sm-6 mb-5 mb-lg-0">
+                    <h6 class="heading mb-3">Anfahrt</h6>
+                    <address>
+                            <normal>Clever &amp; entspannt lernen</normal> <br>
+                            Susanne Sölch <br>
+                            Erika-Cremer-Straße 11 <br>
+                            81829 München <br>
+                        </address>
+                    <ul class="list-unstyled">
+                        
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-md-between py-4 mt-4 border-top mx-0">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="copyright text-sm text-center text-md-left">
+                        &copy; 2019 - Clever &amp; entspannt lernen - Susanne Sölch. <br>
+                        Seite erstellt von <a href="https://tortuga-webdesign.de" target="_blank">Daniel Mössner</a>. Logos &amp; Farben von <a target="_blank" href="https://www.annikalind-grafikdesign.de/">Annika Lind.</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav align-items-center justify-content-center justify-content-md-end">
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-light" href="{% url 'content:impressum' %}">Impressum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pr-0 font-weight-light" href="{% url 'content:datenschutz' %}">Datenschutz</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>   

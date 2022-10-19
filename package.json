@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.6.2"
+  },
+  "scripts": {
+    "css": "sass template/app/css/src/quick-website.scss template/app/css/dist/quick-website.css"
+  }
+}

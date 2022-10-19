@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="de">
+
+<head>
+    {% include 'partials/head.html' %}
+    <title>Entspannungscoaching</title>
+    <meta content="Entspannungscoaching" property="og:title">
+</head>
+
+<body>
+    {% include 'partials/preloader.html' %}
+    <!-- Header -->
+    <header class="header-transparent" id="header-main">
+        {% include 'partials/topbar.html' %}
+        {% include 'partials/navbar.html' %}
+    </header>
+    {% include 'partials/omnisearch.html' %}
+    <!-- Main content -->
+    <section class="slice py-6 pt-lg-7 pb-lg-8 bg-primary">
+        <div data-offset-top="#navbar-main" style="padding-top: 60px;">
+            <!-- Container -->
+            <div class="container d-flex align-items-center text-center text-lg-left">
+                <div class="col px-0">
+                    <div class="row row-grid align-items-center">
+                        <div class="col-lg-6">
+                            <!-- Heading -->
+                            <h1 class="h1 text-white text-center text-lg-left my-4">
+                                Erfahren Sie <strong class="text-warning">alles</strong> was <strong class="text-warning">dazugehört</strong>
+                            </h1>
+                            <!-- Text -->
+                            <p class="lead text-white text-center text-lg-left">
+                                Wie unterstützt Entspannung den Lernerfolg?
+                            </p>
+                            <!-- Buttons -->
+                            <div class="mt-5 text-center text-lg-left">
+                                <a href="#start" data-scroll-to class="btn btn-light btn-lg btn-icon">
+                                    <span class="btn-inner--text">Mehr erfahren</span>
+                                    <span class="btn-inner--icon">
+                                        <i data-feather="arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SVG separator -->
+        <div class="shape-container shape-line shape-position-bottom noprint">
+            <img alt="Image placeholder" src="{% static 'img/svg/separators/line.svg' %}" class="svg-inject">
+        </div>
+    </section>
+    <section class="slice" id="start">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <!-- Blocquote -->
+                    <blockquote class="blockquote blockquote-card mb-5 py-5 px-5 rounded-right bg-soft-primary">
+                        <h2 class="h2 font-weight-700">Der Weg zu allem Großen geht durch die Stille.</h2>
+                      <!--   <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita dolorem nisi obcaecati molestiae dignissimos, facere voluptatibus? A possimus dolore nemo asperiores, ab, corporis repellendus incidunt libero vitae debitis cum!
+                        </p> -->
+                        <div class="blockquote-footer">
+                            Zitat <!-- <cite class="font-weight-600" title="Source Title">Heather Wrights</cite> -->
+                        </div>
+                    </blockquote>
+                    <!-- Article -->
+                    <article>
+                        <h2 class="h4 mt-5">Was ist Entspannungscoaching?</h2>
+                        <p>
+                            Immer mehr Schüler sind in der heutigen Zeit hohen Anforderungen und zeitgleich jedoch hohen Ablenkungsfaktoren ausgesetzt. Ihr Leben ist geprägt von Schulstress, Zeitdruck, Reizüberflutung, familiären Problemen und übermäßigem Medienkonsum. Eine Folge davon können Nervosität, Konzentrations- und Aufmerksamkeitsstörungen, Lustlosigkeit, Lernprobleme und mangelndes Selbstbewusstsein sein. 
+                        </p>
+                        <p id="methoden">
+                            Durch den spielerischen Umgang mit Ruhe und Stille wird ein gesundes Gleichgewicht zwischen Anspannung und Entspannung geschaffen. Wer sich gut entspannen kann, kann besser mit stressigen Situationen umgehen, sich besser auf seine Wahrnehmung konzentrieren und emotionale Spannungen abbauen. Sowohl Kinder als auch Jugendliche erlernen einfache Übungen, die es Ihnen ermöglichen, die Seele baumeln zu lassen bzw. mit Lernproblemen und Stress besser umgehen zu können.
+                        </p>
+                        <h2 class="h4 mt-5">Methoden aus meinem Werkzeugkoffer</h2>
+                        <ul>
+                            <li>Progressive Muskelentspannung</li>
+                            <li>Übungen zur Sinneswahrnehmung</li>
+                            <li>Ruhe- und Konzentrationsübungen</li>
+                            <li>Körperwahrnehmung</li>
+                            <li>Elemente aus dem Autogenen Training</li>
+                            <li>Atementspannung</li>
+                            <li>Brain Gym</li>
+                            <li>Entspannung durch Bewegung</li>
+                            <li>Spielerische Yoga-Übungen</li>
+                            <li>Fantasiereisen</li>
+                            <li>Mentale Formen der Entspannung</li>
+                            <li>Meditation und Stille-Rituale</li>
+                            <li>Tipps und Tricks zum besseren Umgang mit Stress</li>
+                            <li>Übungen gegen Nervosität (z.B. vor Klassenarbeiten)</li>
+                            <li>Und viele mehr..</li>
+                        </ul>
+                        <!-- Image -->
+                        <figure class="col-6 figure mt-5 mb-0 p-0">
+                            <div class="d-flex align-items-start">
+                                <img alt="Frosch" src="{% static 'img/bilder/bild-9.jpg' %}" class="img-fluid rounded mr-3">
+                                <img alt="Notfallkoffer" src="{% static 'img/bilder/bild-8.jpg' %}" class="img-fluid rounded">
+                            </div>
+{#                            <figcaption class="mt-3 text-muted" id="ziele">hier kommt noch n schoenes bild rein</figcaption>#}
+                        </figure>
+                        <h2 class="h4 mt-5" id="ziele">Ziele des Entspannungscoaching</h2>
+                        <p>Die Kinder und Jugendliche erlernen hier alltagstaugliche Übungen, die es ihnen ermöglichen, mit Lernproblemen und Stress und somit mit den Herausforderungen des Lebens besser umgehen zu können.</p>
+                        <!-- Heading -->
+{#                        <h2 class="h4 mt-5">Ergebnisse (icons werden hier noch verbessert)</h2>#}
+                        <!-- Milestones -->
+{#                        <div class="row my-5">#}
+{#                            <div class="col-sm-4">#}
+{#                                <div class="card shadow-lg rounded-lg border-0 mb-sm-0">#}
+{#                                    <div class="p-4 text-center">#}
+{#                                        <div class="icon bg-warning text-white rounded-circle icon-shape">#}
+{#                                            <i data-feather="dollar-sign"></i>#}
+{#                                        </div>#}
+{#                                        <span class="h3 d-block mt-3 mb-0">#}
+{#                                            <span class="counter font-weight-bolder" data-from="0" data-to="10" data-speed="3000" data-refresh-interval="200"></span>#}
+{#                                        </span>#}
+{#                                        <p class="text-muted mb-0">#}
+{#                                            Schüler &amp; Eltern#}
+{#                                        </p>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="col-sm-4">#}
+{#                                <div class="card shadow-lg rounded-lg border-0 mb-sm-0">#}
+{#                                    <div class="p-4 text-center">#}
+{#                                        <div class="icon bg-danger text-white rounded-circle icon-shape">#}
+{#                                            <i data-feather="download"></i>#}
+{#                                        </div>#}
+{#                                        <span class="h3 d-block mt-3 mb-0">#}
+{#                                            <span class="counter font-weight-bolder" data-from="0" data-to="20" data-speed="3000" data-refresh-interval="200"></span>#}
+{#                                        </span>#}
+{#                                        <p class="text-muted mb-0">#}
+{#                                            Entspannungsübungen#}
+{#                                        </p>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="col-sm-4">#}
+{#                                <div class="card shadow-lg rounded-lg border-0 mb-sm-0">#}
+{#                                    <div class="p-4 text-center">#}
+{#                                        <div class="icon bg-success text-white rounded-circle icon-shape">#}
+{#                                            <i data-feather="users"></i>#}
+{#                                        </div>#}
+{#                                        <span class="h3 d-block mt-3 mb-0">#}
+{#                                            <span class="counter font-weight-bolder" data-from="0" data-to="100" data-speed="3000" data-refresh-interval="200"></span>#}
+{#                                            <span class="counter-extra">%</span>#}
+{#                                        </span>#}
+{#                                        <p class="text-muted mb-0">#}
+{#                                            Weniger Stress#}
+{#                                        </p>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    {% include 'partials/cta_center.html' %}
+    {% include 'partials/footer.html' %}
+    {#% include 'partials/cookie.html' %#}
+    {% include 'partials/scripts.html' %}
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="de">
+
+<head>
+    {% include 'partials/head.html' %}
+    <title>Über mich</title>
+    <meta content="Über mich" property="og:title">
+</head>
+
+<body>
+{% include 'partials/preloader.html' %}
+<!-- Header -->
+<header class="header-transparent" id="header-main">
+    {% include 'partials/topbar.html' %}
+    {% include 'partials/navbar.html' %}
+</header>
+<!-- Main content -->
+<section class="slice py-6 pt-lg-7 pb-lg-8 bg-primary">
+    <div data-offset-top="#navbar-main" style="padding-top: 60px;">
+        <!-- Container -->
+        <div class="container d-flex align-items-center text-center text-lg-left">
+            <div class="col px-0">
+                <div class="row row-grid align-items-center">
+                    <div class="col-lg-6">
+                        <!-- Heading -->
+                        <h1 class="h1 text-white text-center text-lg-left my-4">
+                            Mehr <strong class="text-warning">über mich</strong>
+                        </h1>
+                        <!-- Text -->
+                        <p class="lead text-white text-center text-lg-left">
+                            Erfahren Sie wie ich zu dem gekommen bin, was ich heute mache.
+                        </p>
+                        <!-- Buttons -->
+                        <div class="mt-5 text-center text-lg-left">
+                            <a href="#start" data-scroll-to class="btn btn-light btn-lg btn-icon">
+                                <span class="btn-inner--text">Mehr erfahren</span>
+                                <span class="btn-inner--icon">
+                                        <i data-feather="arrow-right"></i>
+                                    </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SVG separator -->
+    <div class="shape-container shape-line shape-position-bottom noprint">
+        <img alt="Image placeholder" src="{% static 'img/svg/separators/line.svg' %}" class="svg-inject">
+    </div>
+</section>
+<section class="slice slice-lg" id="start">
+    <div class="container">
+        <span class="badge badge-primary badge-pill noprint">Kurzfassung</span>
+        <h2 class="h4 mt-4">Über mich</h2>
+        <div class="row mt-4">
+            <div class="col-lg-6 pr-lg-5">
+                <p class="lead lh-180 mb-3">
+                    Hallo! Mein Name ist Susanne Sölch. Ich bin Mutter von zwei bereits erwachsenen Kindern (Tochter Jhrg. 1992 /
+                    Sohn Jhrg. 1998)
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <p class="">
+                    Bereits seit 2011 bin ich als freiberuflicher Lerncoach, Lerntrainerin und Entspannungspädagogin
+                    in meiner eigenen Lernberatung <span class="text-primary">„Clever und entspannt lernen“</span> in der Messestadt Riem tätig.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slice slice-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-6">
+                <img src="{% static 'img/bilder/bild-1.jpg' %}" alt="Susanne" class="rounded-lg img-fluid"/>
+{#                <div class="text-right mt-4">#}
+{#                    <img src="{% static 'img/bilder/bild-4.jpg' %}" alt="Image" class="rounded-lg img-fluid w-50"/>#}
+{#                </div>#}
+            </div>
+            <div class="col-lg-7 col-6">
+                <img src="{% static 'img/bilder/bild-2.jpg' %}" alt="Kinder" class="rounded-lg img-fluid w-75"/>
+                <div class="text-right mt-4">
+                    <img src="{% static 'img/bilder/bild-5.jpg' %}" alt="Tisch" class="rounded-lg img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slice slice-lg">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-xl-2 text-lg-left">
+                <h2 class="h4 mb-4">Qualifikationen</h2>
+            </div>
+            <div class="col-xl-7">
+                <ul class="list-unstyled list-bullet">
+                    <li class="py-2 d-flex">
+                        <div class="pr-2"><span class="badge badge-circle badge-primary"><i data-feather="check"></i></span></div>
+                        Zertifizierter Lerncoach (ILE)
+                    </li>
+                    <li class="py-2 d-flex">
+                        <div class="pr-2"><span class="badge badge-circle badge-primary"><i data-feather="check"></i></span></div>
+                        Zertifizierte Lerntrainerin (ILE)
+                    </li>
+                    <li class="py-2 d-flex">
+                        <div class="pr-2"><span class="badge badge-circle badge-primary"><i data-feather="check"></i></span></div>
+                        Entspannungspädagogin für Kinder (KidsRelax)
+                    </li>
+                    <li class="py-2 d-flex">
+                        <div class="pr-2"><span class="badge badge-circle badge-primary"><i data-feather="check"></i></span></div>
+                        Seminarleiterin für progressive Muskelentspannung (KidsRelax)
+                    </li>
+                    <li class="py-2 d-flex">
+                        <div class="pr-2"><span class="badge badge-circle badge-primary"><i data-feather="check"></i></span></div>
+                        Zertifizierte Trainerin für Marburger Konzentrationstraining
+                    </li>
+                    <li class="py-2 d-flex">
+                        <div class="pr-2"><span class="badge badge-circle badge-primary"><i data-feather="check"></i></span></div>
+                        Erfahrungen mit ADHS, Legasthenie, Dyskalkulie
+                    </li>
+
+                    <li class="py-2 d-flex">
+                        <div class="pr-2"><span class="badge badge-circle badge-primary"><i data-feather="check"></i></span></div>
+                        Practitioner für gehirn-gerechtes Lernen und Lehren nach Vera F. Birkenbihl
+                    </li>
+                    <li class="py-2 d-flex">
+                        <div class="pr-2"><span class="badge badge-circle badge-primary"><i data-feather="check"></i></span></div>
+                        Betreuerin in einer Münchner Mittagsbetreuung (Grundschule)
+                    </li>
+                    <li class="py-2 d-flex">
+                        <div class="pr-2"><span class="badge badge-circle badge-primary"><i data-feather="check"></i></span></div>
+                        Dozentin im Bildungslokal Riem
+                    </li>
+                    <li class="py-2 d-flex">
+                        <div class="pr-2"><span class="badge badge-circle badge-primary"><i data-feather="check"></i></span></div>
+                        Kursleiterin “Spielerisch Deutsch lernen für Kinder von 4 – 6 Jahren“ in Kooperation mit SOS Kinderdorf und
+                        Frühe Förderung
+                    </li>
+                    <li class="py-2 d-flex">
+                        <div class="pr-2"><span class="badge badge-circle badge-primary"><i data-feather="check"></i></span></div>
+                        Ehrenamtliche Leitung einer Mutter-Kind-Gruppe
+                    </li>
+                    <li class="py-2 d-flex">
+                        <div class="pr-2"><span class="badge badge-circle badge-primary"><i data-feather="check"></i></span></div>
+                        Langjährige ehrenamtliche Leitung des Nachbarschaftstreff Galeriahaus
+                    </li>
+                    <li class="py-2 d-flex">
+                        <div class="pr-2"><span class="badge badge-circle badge-primary"><i data-feather="check"></i></span></div>
+                        Mituns-Schulung zur Managerin im Treff und Stadtteil
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h2 class="h4 mt-5">Mehr über mich</h2>
+                        <p>
+                            Seit 2015 arbeite ich zusätzlich  ich in einer Mittagsbetreuung in München und unterstütze dort Grundschulkinder aller Klassenstufen bei den Hausaufgaben. So bleibe ich in den aktuellen Schulplänen auf dem Laufenden und sehe bereits dort, wo Lernprobleme entstehen.
+                        </p>
+                        <p>
+                             Außerdem gebe ich seit 2017 Kurse zum Thema „Lernen lernen“ für Schüler der 3. bis 6. Klasse, sowie den Kurs „Spielerisch Deutsch lernen“ für Kinder von 4 – 6 Jahren.
+                        </p>
+                        <p class="">
+                            Weitere Angebote rund ums Thema Lernen und Entspannen:
+                        </p>
+                        <ul class="">
+                            <li>Lerntraining</li>
+                            <li>Elterntraining</li>
+                            <li>Workshops</li>
+                            <li>Kurse</li>
+                        </ul>
+                        <p>
+                            Falls Sie Interesse oder Fragen dazu haben, dann rufen Sie mich gerne an. Zusammen finden wir das passende Angebot für Sie.
+                        </p>
+                        <p>
+                            Durch meine privat und beruflichen Erfahrungen sind mir Lernprobleme und der damit verbundende Leidensdruck nicht fremd. In einer ruhigen und vertrauensvollen Umgebung möchte ich die Kinder und Jugendlichen individuell und ganzheitlich unterstützen. Gemeinsam finden wir heraus, was in ihnen steckt und entdecken die Lust am erfolgreichen Lernen.
+                        </p>
+                        <h3 class="h5 mt-4">Was mir noch wichtig ist:</h3>
+                        <p>
+                            Die Einzigartigkeit jedes Menschen zu respektieren und ihm mit Toleranz und Wertschätzung zu begegnen, ist mir ein großes Anliegen.
+                        </p>
+                        <p>
+                            Ich bin davon überzeugt, dass jeder Mensch alle wichtigen Voraussetzungen und Fähigkeiten für ein erfolgreiches Lernen und Leben in sich trägt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include 'partials/cta_center.html' %}
+{% include 'partials/footer.html' %}
+{#% include 'partials/cookie.html' %#}
+{% include 'partials/scripts.html' %}
+</body>
+
+</html>

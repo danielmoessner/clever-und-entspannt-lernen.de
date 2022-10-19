@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="de">
+
+<head>
+    {% include 'partials/head.html' %}
+    <title>Lerncoaching</title>
+    <meta content="Lerncoaching" property="og:title">
+</head>
+
+<body>
+    {% include 'partials/preloader.html' %}
+    <!-- Header -->
+    <header class="header-transparent" id="header-main">
+        {% include 'partials/topbar.html' %}
+        {% include 'partials/navbar.html' %}
+    </header>
+    {% include 'partials/omnisearch.html' %}
+    <!-- Main content -->
+    <section class="slice py-6 pt-lg-7 pb-lg-8 bg-primary">
+        <div data-offset-top="#navbar-main" style="padding-top: 60px;">
+            <!-- Container -->
+            <div class="container d-flex align-items-center text-center text-lg-left">
+                <div class="col px-0">
+                    <div class="row row-grid align-items-center">
+                        <div class="col-lg-6">
+                            <!-- Heading -->
+                            <h1 class="h1 text-white text-center text-lg-left my-4">
+                                Erfahren Sie <strong class="text-warning">alles</strong> was <strong class="text-warning">dazugehört</strong>
+                            </h1>
+                            <!-- Text -->
+                            <p class="lead text-white text-center text-lg-left">
+                                Wie führt Lerncoaching zum Erfolg?
+                            </p>
+                            <!-- Buttons -->
+                            <div class="mt-5 text-center text-lg-left">
+                                <a href="#start" data-scroll-to class="btn btn-light btn-lg btn-icon">
+                                    <span class="btn-inner--text">Mehr erfahren</span>
+                                    <span class="btn-inner--icon">
+                                        <i data-feather="arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SVG separator -->
+        <div class="shape-container shape-line shape-position-bottom noprint">
+            <img alt="Image placeholder" src="{% static 'img/svg/separators/line.svg' %}" class="svg-inject">
+        </div>
+    </section>
+    <section class="slice" id="start">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <!-- Blocquote -->
+                    <blockquote class="blockquote blockquote-card mb-5 py-5 px-5 rounded-right bg-soft-primary">
+                        <h2 class="h2 font-weight-700">Alle Hindernisse und Schwierigkeiten sind Stufen, auf denen wir in die Höhe steigen.</h2>
+                      <!--   <p class="lead">
+                            Auch aus Steinen, die Dir in den Weg gelegt werden, kannst Du etwas Schönes bauen.
+                        </p> -->
+                        <div class="blockquote-footer">
+                            <cite class="font-weight-600" title="Source Title">Friedrich Nietsche</cite>
+                        </div>
+                    </blockquote>
+                    <!-- Article -->
+                    <article>
+                        <h2 class="h4 mt-5">Was ist Lerncoaching?</h2>
+                        <ul class="unordered-list">
+                            <li>Eine Lernbegleitung auf Zeit</li>
+                            <li>Ziel- und lösungsorientiert</li>
+                            <li>Individuell und ganzheitlich</li>
+                            <li>Lernstoffunabhängig und fächerübergreifend</li>
+                            <li>Hilfe zur Selbsthilfe</li>
+                            <li>Keine Nachhilfe</li>
+                            <li>Keine Therapie</li>
+                        </ul>
+                        <h3 class="h5 mt-4">Worum geht es?</h3>
+                        <p>
+                            Es geht darum, mit den Kindern und Jugendlichen zusammen herauszufinden, wie sie effektiver und leichter lernen. Oft sind mangelndes Selbstbewusstsein, fehlendes Selbstvertrauen und erfolglose Lernstrategien die Ursachen von Lernstörungen. Indem man den Kindern und Jugendlichen ihre Stärken und Fähigkeiten gezielt bewusst macht, fördert man die Entwicklung eines stabilen Selbstbewusstseins der Lernenden. An sich selbst zu glauben, seine Stärken und Fähigkeiten richtig einzusetzen sowie die passende Lernstrategie helfen und bewegen oft mehr als man für möglich hält.
+                        </p>
+                        <h3 class="h5 mt-4">Was mache ich?</h3>
+                        <p id="fuer-wen-geeignet">
+                            Als Lerncoach begleite und unterstütze ich Kinder und Jugendliche, um ihre persönlichen Stärken und Fähigkeiten zu entdecken, Lernhindernisse aufzuspüren und individuelle Lösungswege gemeinsam mit ihnen zu erarbeiten. Wichtig zu wissen ist hierbei, dass es beim Lerncoaching nicht, wie beispielsweise in der Nachhilfe, um den Lernstoff an sich geht, sondern konkret um das „Wie lerne ich erfolgreich?“.
+                        </p>
+                        <h2 class="h4 mt-5">Für wen ist Lerncoaching geeignet?</h2>
+                        <p class="m-0"><strong>Für Schüler</strong></p>
+                        <ul>
+                            <li>Jeden Alters in denen mehr steckt, als sie momentan zeigen können</li>
+                            <li>Die auf der Suche nach einer geeigneten Lösung gegen Lernprobleme und schlechten Noten sind</li>
+                            <li>Die leichter, erfolgreicher und nachhaltiger lernen wollen</li>
+                            <li>Die Lernfrust gegen Lernlust eintauschen möchte</li>
+                            <li>Für alle Eltern, die Ihre Kinder unterstützen wollen</li>
+                        </ul>
+                        <p>
+                            Wann immer es möglich ist, möchte ich die Eltern mit ins Boot holen, weil sie entscheidend zum Lernerfolg ihrer Kinder beitragen
+                        </p>
+                        <p>
+                            Auch für Kinder mit LRS, Dyskalkulie und AD(H)S geeignet
+                        </p>
+                        <!-- Image -->
+                        <figure class="figure mt-5 mb-0">
+                            <img alt="Image placeholder" src="{% static 'img/bilder/bild-3.jpg' %}" class="img-fluid rounded">
+                            <figcaption class="mt-3 text-muted" id="ziele">Quelle: ILE Iris Komarek</figcaption>
+                        </figure>
+                        <h2 class="h4 mt-5" >Ziele des Coachings</h2>
+                        <p>
+                            Schüler konkrete Strategien und Werkzeuge an die Hand zu geben, um ein selbständiges und erfolgreiches Lernen zu erreichen. 
+                        </p>
+                        <h2 class="h4 mt-5">Was sind die Themen?</h2>
+                        <ul class="unordered-list">
+                            <li>Erkennen der eigenen Stärken und Fähigkeiten</li>
+                            <li>Selbsteinschätzung</li>
+                            <li>Gehirngerechtes Lernen</li>
+                            <li>Motivationsaufbau</li>
+                            <li>Lernen mit Spaß und allen Sinnen</li>
+                            <li>Stärkung des Selbstbewusstseins</li>
+                            <li>Abbau von Lernblockaden</li>
+                            <li>Aufbau der Prüfungskompetenz</li>
+                            <li>Tipps und Tricks zur Steigerung der Konzentration</li>
+                            <li>Erfolgreiche Lernstrategien (auch bei LRS und Dyskalkulie)</li>
+                            <li>Lernorganisation und Zeitmanagement</li>
+                            <li>besserer Umgang mit Stress</li>
+                            <li>Elterncoaching</li>
+                            <li>und vieles mehr</li>
+                        </ul>
+{#                        <h2 class="h4 mt-5">Nach dem Coaching</h2>#}
+{#                        <p>#}
+{#                            Jedes Kind will lernen und gute Noten schreiben. Doch manchmal hindern Sie Druck, hohe Erwartungen, schlechte Lernstrategien und Stress, dies zu erreichen. Dies führt zu mangelndem Selbstbewusstsein, schlechte Konzentration. Der negative Kreislauf beginnt. Diesen Kreislauf zu durchbrechen und Ihre Kinder dabei zu unterstützen, darin sehe ich meine Aufgabe. Nach dem Coaching wird Ihr Kind wissen, wie es richtig und effektiv lernt. Damit kommen gute Noten und Schule ist keine Stresssituation mehr. #}
+{#                        </p>#}
+                        <!-- Heading -->
+{#                        <h2 class="h4 mt-5">Ergebnisse</h2>#}
+                        <!-- Milestones -->
+{#                        <div class="row my-5">#}
+{#                            <div class="col-sm-4">#}
+{#                                <div class="card shadow-lg rounded-lg border-0 mb-sm-0">#}
+{#                                    <div class="p-4 text-center">#}
+{#                                        <span class="h3 mt-3 mb-0 d-block">#}
+{#                                            <span class="counter font-weight-bolder" data-from="0" data-to="10" data-speed="3000" data-refresh-interval="200"></span>#}
+{#                                        </span>#}
+{#                                        <p class="text-muted mb-0">#}
+{#                                            Schüler#}
+{#                                        </p>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="col-sm-4">#}
+{#                                <div class="card shadow-lg rounded-lg border-0 mb-sm-0">#}
+{#                                    <div class="p-4 text-center">#}
+{#                                        <span class="mt-3 mb-0 h3 d-block">#}
+{#                                            <span class="counter font-weight-bolder" data-from="0" data-to="20" data-speed="3000" data-refresh-interval="200"></span>#}
+{#                                        </span>#}
+{#                                        <p class="text-muted mb-0">#}
+{#                                            Lernstrategien#}
+{#                                        </p>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="col-sm-4">#}
+{#                                <div class="card shadow-lg rounded-lg border-0 mb-sm-0">#}
+{#                                    <div class="p-4 text-center">#}
+{#                                        <span class="mt-3 mb-0 h3 d-block">#}
+{#                                            <span class="counter font-weight-bolder" data-from="0" data-to="100" data-speed="3000" data-refresh-interval="200"></span>#}
+{#                                            <span class="counter-extra">%</span>#}
+{#                                        </span>#}
+{#                                        <p class="text-muted mb-0">#}
+{#                                            bessere Noten#}
+{#                                        </p>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    {% include 'partials/cta_center.html' %}
+    {% include 'partials/footer.html' %}
+    {#% include 'partials/cookie.html' %#}
+    {% include 'partials/scripts.html' %}
+</body>
+
+</html>

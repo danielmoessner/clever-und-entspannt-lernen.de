@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="de">
+
+<head>
+    {% include 'partials/head.html' %}
+    <title>Impressum</title>
+    <meta content="Impressum" property="og:title">
+</head>
+
+<body>
+{% include 'partials/preloader.html' %}
+<!-- Header -->
+<header class="header-transparent" id="header-main">
+    {% include 'partials/topbar.html' %}
+    {% include 'partials/navbar.html' %}
+</header>
+<!-- Main content -->
+<section class="slice py-6 pt-lg-7 pb-lg-8 bg-primary">
+    <div data-offset-top="#navbar-main" style="padding-top: 60px;">
+        <!-- Container -->
+        <div class="container d-flex align-items-center text-center text-lg-left">
+            <div class="col px-0">
+                <div class="row row-grid align-items-center">
+                    <div class="col-lg-6">
+                        <!-- Heading -->
+                        <h1 class="h1 text-white text-center text-lg-left my-4">
+                            Impressum
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SVG separator -->
+    <div class="shape-container shape-line shape-position-bottom noprint">
+        <img alt="Image placeholder" src="{% static 'img/svg/separators/line.svg' %}" class="svg-inject">
+    </div>
+</section>
+<section class="slice slice-lg">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-xl-8 text-lg-left">
+                <h2 class="h4 mb-4">Impressum</h2>
+                <p>
+                    Clever und entspannt lernen <br>
+                    Susanne Sölch<br>
+                    Erika-Cremer-Straße 11<br>
+                    81829 München<br>
+                    Telefon: 089 673 28 60<br>
+                    E-Mail: susanne.soelch@arcor.de<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% include 'partials/footer.html' %}
+{#% include 'partials/cookie.html' %#}
+{% include 'partials/scripts.html' %}
+</body>
