@@ -1,6 +1,8 @@
 secrets.json
-static
 node_modules
 .DS_Store
 .idea
 db.sqlite3
+
+static/*
+!dist/static/*
