@@ -41,3 +41,5 @@ jobs:
           NETLIFY_SITE_ID: 522624e7-59e8-4f39-8eb4-d110841263b0
           NETLIFY_DEPLOY_TO_PROD: true
           build_directory: dist
+          install_command: "echo skipping..."
+          build_command: "echo skipping..."
