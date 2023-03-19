@@ -1,0 +1,43 @@
+name: 'Deployment Stage'
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build
+    runs:
+
+  deploy:
+    name: Deploy To Netlify
+    steps:
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Cache
+        uses: actions/cache@v3
+        id: cache-packages
+        with:
+          path: ${{ env.pythonLocation }}
+          key: ${{ env.pythonLocation }}-${{ hashFiles('Pipfile') }}
+
+      - name: Install Dependencies
+        if: steps.cache-packages.outputs.cache-hit != 'true'
+        run: |
+          pip install --upgrade pip pipenv
+          pipenv requirements > requirements.txt
+          pip install -r requirements.txt
+
+      - name: Build
+        run: ./utils/distill.sh
+
+      - name: Deploy
+        uses: jsmrcaga/action-netlify-deploy@v2.0.0
+        with:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          NETLIFY_SITE_ID: 522624e7-59e8-4f39-8eb4-d110841263b0
+          NETLIFY_DEPLOY_TO_PROD: true
+          build_directory: dist
