@@ -1,2 +1,2 @@
-python manage.py collectstatic || exit 0
-python manage.py distill-local || exit 0
+python manage.py collectstatic --no-input || exit 0
+python manage.py distill-local --force || exit 0
