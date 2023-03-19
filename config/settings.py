@@ -4,19 +4,7 @@ from django.core.exceptions import ImproperlyConfigured
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-with open(os.path.join(BASE_DIR, "secrets.json")) as f:
-    secrets_json = json.loads(f.read())
-
-
-def get_secret(setting, secrets=secrets_json):
-    try:
-        return secrets[setting]
-    except KeyError:
-        error_msg = "Set the {} environment variable.".format(setting)
-        raise ImproperlyConfigured(error_msg)
-
-
-SECRET_KEY = get_secret("SECRET_KEY")
+SECRET_KEY = "no-secret"  # django is used as static generator
 
 INSTALLED_APPS = [
     'django.contrib.admin',
