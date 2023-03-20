@@ -1,14 +1,1 @@
-<div class="card bg-primary text-white">
-    <div class="card-header py-4" id="heading-2-{{ number }}" data-toggle="collapse" role="button"
-         data-target="#collapse-2-{{ number }}" aria-expanded="false" aria-controls="collapse-2-{{ number }}">
-        <h2 class="h6 mb-0 text-white"><i data-feather="sun" class="mr-3"></i>{{ name }}</h2>
-    </div>
-    <div id="collapse-2-{{ number }}" class="collapse" aria-labelledby="heading-2-{{ number }}"
-         data-parent="#accordion-2">
-        <div class="card-body">
-            <p class="text-white">
-                {{ text }}
-            </p>
-        </div>
-    </div>
-</div>
+{% include 'partials/review.html' with accordion=2 name=name number=number text=text %}

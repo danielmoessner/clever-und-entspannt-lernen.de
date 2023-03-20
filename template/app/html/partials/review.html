@@ -1,0 +1,14 @@
+<div class="card bg-primary text-white">
+    <div class="card-header py-4" id="heading-{{ accordion }}-{{ number }}" data-toggle="collapse" role="button"
+         data-target="#collapse-{{ accordion }}-{{ number }}" aria-expanded="false" aria-controls="collapse-{{ accordion }}-{{ number }}">
+        <h2 class="h6 mb-0 text-white"><i data-feather="sun" class="mr-3"></i>{{ name }}</h2>
+    </div>
+    <div id="collapse-{{ accordion }}-{{ number }}" class="collapse" aria-labelledby="heading-{{ accordion }}-{{ number }}"
+         data-parent="#accordion-{{ accordion }}">
+        <div class="card-body">
+            <p class="text-white">
+                {{ text }}
+            </p>
+        </div>
+    </div>
+</div>

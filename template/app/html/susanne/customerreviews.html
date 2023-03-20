@@ -56,7 +56,7 @@
     <div class="shape-container shape-line shape-position-top shape-orientation-inverse noprint">
         <img alt="Image placeholder" src="{% static 'img/svg/separators/line.svg' %}" class="svg-inject">
     </div>
-    <!-- Container -->
+    <!-- Schueler -->
     <div class="container">
         <div class="row">
             <div class="col-xl-6">
@@ -329,7 +329,8 @@
                     <div class="card bg-primary text-white">
                         <div class="card-header py-4" id="heading-1-18" data-toggle="collapse" role="button"
                              data-target="#collapse-1-18" aria-expanded="false" aria-controls="collapse-1-18">
-                            <h2 class="h6 mb-0 text-white"><i data-feather="sun" class="mr-3"></i>Kein Name angegeben</h2>
+                            <h2 class="h6 mb-0 text-white"><i data-feather="sun" class="mr-3"></i>Kein Name angegeben
+                            </h2>
                         </div>
                         <div id="collapse-1-18" class="collapse" aria-labelledby="heading-1-18"
                              data-parent="#accordion-1">
@@ -621,16 +622,18 @@
                             </div>
                         </div>
                     </div>
-                     <div class="card bg-primary text-white">
+                    <div class="card bg-primary text-white">
                         <div class="card-header py-4" id="heading-2-18" data-toggle="collapse" role="button"
                              data-target="#collapse-2-18" aria-expanded="false" aria-controls="collapse-2-18">
-                            <h2 class="h6 mb-0 text-white"><i data-feather="sun" class="mr-3"></i>Keine Namensangabe</h2>
+                            <h2 class="h6 mb-0 text-white"><i data-feather="sun" class="mr-3"></i>Keine Namensangabe
+                            </h2>
                         </div>
                         <div id="collapse-2-18" class="collapse" aria-labelledby="heading-2-18"
                              data-parent="#accordion-2">
                             <div class="card-body">
                                 <p class="text-white">
-                                    Danke Susi! Durch dich habe ich viel dazu gelernt. Wie man sich konzentrieren kann. Es hat mir sehr viel Spaß gemacht.
+                                    Danke Susi! Durch dich habe ich viel dazu gelernt. Wie man sich konzentrieren kann.
+                                    Es hat mir sehr viel Spaß gemacht.
                                 </p>
                             </div>
                         </div>
@@ -642,6 +645,31 @@
                     {% include 'partials/review-2.html' with number=23 name="Sadik" text="Es war toll, dass du nur für uns da bist und ich habe viel mitgenommen. Wow, ich habe was gelernt. Vielen Dank Susi" %}
                     {% include 'partials/review-2.html' with number=24 name="Keine Namensangabe" text="Ich kann jetzt mein Gehirn besser nutzen." %}
                     {% include 'partials/review-2.html' with number=25 name="Elhama" text="Der Kurs „Lernen lernen“ hat Spaß gemacht mit dir." %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Eltern -->
+    <div class="container">
+        <h2 class="h2 mt-5">Ein paar Stimmen zum Workshop „Lernorganisation für Eltern“</h2>
+        <div class="row">
+            <div class="col-xl-6">
+                <div id="accordion-3" class="accordion accordion-spaced">
+                    {% include 'partials/review-3.html' with number=1 name="Keine Namensangabe" text="Mir hat der Workshop sehr gut gefallen. - Lernplan, Wissennetz, viele Tipps zum Umsetzen im Alltag." %}
+                    {% include 'partials/review-3.html' with number=2 name="Keine Namensangabe" text="Sehr nützliche Ideen zur Umsetzung (Pläne erstellen, Wissennetz etc.) (++)" %}
+                    {% include 'partials/review-3.html' with number=3 name="Keine Namensangabe" text="Lockere, enspannte Atmosphäte (++)" %}
+                    {% include 'partials/review-3.html' with number=4 name="Keine Namensangabe" text="Viel Zeit um Fragen zu stellen und sie zu beantworten (++)" %}
+                    {% include 'partials/review-3.html' with number=5 name="Keine Namensangabe" text="Mir hat alles gut gefallen ☺" %}
+                    {% include 'partials/review-3.html' with number=6 name="Mutter eines Coachingkindes" text="Schön sie zu treffen. Ich wollte mich noch bei ihnen bedanken, dass sie meinem Sohn geholfen habe, dass er den Übertritt ins Gymnasium geschafft hat." %}
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div id="accordion-4" class="accordion accordion-spaced">
+                    {% include 'partials/review-4.html' with number=1 name="Keine Namensangabe" text="Mir hat gut gefallen, alles erklärt zu bekommen, z.B. wie man Struktur ins Lernen bekommt." %}
+                    {% include 'partials/review-4.html' with number=2 name="Keine Namensangabe" text="Motivation für die Kinder und Stärken der Kinder finden und festigen." %}
+                    {% include 'partials/review-4.html' with number=3 name="Keine Namensangabe" text="Mir hat sehr gut gefallen, wie ich das Selbstbewusstsein meines Kindes stärken kann." %}
+                    {% include 'partials/review-4.html' with number=4 name="Keine Namensangabe" text="Danke für die tollen Tipps zur Organisation zum Lernen (Lernplan), Hausaufgaben, Stundenplan usw." %}
+                    {% include 'partials/review-4.html' with number=5 name="Mama von Abdullah" text="Liebe Frau Sölch <br><br>Vielen herzlichen Dank für Ihre Bemühung und Tipps. Ich habe selbst als Mama auch viel gelernt. <br>Ich wünsche Ihnen und Ihrer Familie viel Glück und Erfolg. <br><br>Mama von Abdullah" %}
                 </div>
             </div>
         </div>
